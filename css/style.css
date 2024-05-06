@@ -269,7 +269,7 @@ body {
 }
 
 .footer {
-    background: coral;
+    /* background: coral; */
     grid-area: section__footer;
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
