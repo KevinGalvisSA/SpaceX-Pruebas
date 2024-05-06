@@ -196,3 +196,5 @@ export const progressSecondStageHeightRocket = async (Rockets) => {
   information__2.append(...conterDiv);
 
 };
+
+//Configuracion de las barras del lado izq
