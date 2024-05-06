@@ -170,12 +170,13 @@ body {
     /* background: blue; */
     grid-area: colum__1;
     display: grid;
-    grid-template-rows: 1fr 1.3fr;
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-        "carusel__colum__1"
-        "table__colum__1";
+        "carusel__colum__1 table__colum__1"
+        "information__colum__1 information__colum__1";
     justify-content: center;
     align-items: center;
+    gap: 5px;
 }
 
 .section__information__2 div:first-child {
@@ -185,6 +186,14 @@ body {
     overflow-x: auto;
     gap: 10px;
     justify-content: space-evenly;
+}
+
+.section__information__2 .information__table {
+    grid-area: information__colum__1;
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .section__information__2 div:first-child>.carousel__item {
@@ -217,7 +226,7 @@ body {
 }
 
 .section__image>.carousel__item img {
-    width: 305px;
+    width: 360px;
     height: 190px;
     border-radius: 10px;
     object-fit: cover;
@@ -230,9 +239,10 @@ body {
     display: grid;
     grid-template-rows: 1fr 1.3fr;
     grid-template-areas:
-        "carusel__colum__2"
-        "table__colum__2";
+        "carusel__colum__2 table__colum__2";
     justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .section__information__3 div:first-child {
